@@ -1,0 +1,59 @@
+@import 'meyer_reset';
+
+// Variables
+$green-bg: #B2DC44;
+$pink: #F52DA7;
+
+body {
+  background-image: url('../images/dude.png');
+  background-color: $green-bg;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: Courier New;
+  color: $pink;
+  text-align: right;
+  font-size: 3em;
+  padding-right: 1em;
+}
+
+p {
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-align: right;
+  font-size: 4em;
+  padding: 1em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4em 4em;
+}
+
+.another-one {
+  float: right;
+  padding: 0 4em;
+}
+
+#tweetIt {
+  padding: 1em 6em 2em 4em;
+  float: right;
+}
+
+.btn {
+  font-family: Courier New;
+  color: $pink;
+  font-size: 3em;
+  background: transparent;
+  border: 2px solid $pink;
+  padding: 0.2em 0.3em 0.2em 0.3em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255, 92, 193, 0.5);
+  border: 2px solid white;
+  color: white;
+}

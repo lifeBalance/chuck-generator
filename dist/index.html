@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+    <title>Chuck Generator</title>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type="text/css">
+    <!-- Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css">
+    <!-- Custom-->
+    <link href="/stylesheets/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>These are the facts:</h1>
+      <p id="quote"></p>
+      <div class="another-one">
+        <button id="generate" type="button" class="btn">Another one!</button>
+      </div>
+      <div id="tweetIt">
+        <!-- We don't need to create a button here, since it's created by a "Factory Button" in script.js-->
+      </div>
+      <script>
+        window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+        
+          return t;
+        }(document, "script", "twitter-wjs"));
+      </script>
+    </div>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Custom scripts-->
+    <script src="javascripts/script.js"></script>
+  </body>
+</html>
