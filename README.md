@@ -10,7 +10,7 @@ The project I've used:
 ---
 [0]: http://freecodecamp.com/
 [1]: http://www.icndb.com/
-[2]: http://codepen.io/JaviScript/full/yeOzee/
+[2]: http://codepen.io/JaviScript/full/RrKWje/
 [3]: http://gulpjs.com/
 [4]: http://jade-lang.com/
 [5]: http://jquery.com/
