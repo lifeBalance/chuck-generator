@@ -83,7 +83,8 @@ h1 {
 
 p {
   font-family: 'Bangers', cursive;
-  color: white; }
+  color: white;
+  text-shadow: 2px 2px #524F4F; }
 
 .another-one button {
   font-family: Courier New;
@@ -118,7 +119,7 @@ p {
     z-index: -1; }
   h1 {
     float: right;
-    text-align: right;
+    text-align: center;
     font-size: 3em;
     padding: 1em 1em 0 0; }
   p {
@@ -130,8 +131,12 @@ p {
     margin: 0 auto;
     padding: 1em; }
   .another-one {
-    padding: 1em;
-    margin: 0 auto; }
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em; }
+  .another-one button {
+    font-size: 2em;
+    padding: .2em; }
   #tweetIt {
     padding: 1em 6em 2em 4em;
     float: right; } }
