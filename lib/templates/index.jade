@@ -2,15 +2,17 @@ extends ./layouts/main.jade
 
 block content
   .container
-    h1 These are the facts:
+    a#logo(href='http://www.icndb.com/'): img(src="images/icndb_logo.png")
+    h1.cf These are the facts:
 
     p#quote
     
     .another-one
       button#generate.btn(type="button") Another one!
       
-    #tweetIt
+    #tweetIt.cf
       // We don't need to create a button here, since it's created by a "Factory Button" in script.js
+    img#chuck(src='images/chuck.png')
     
     script.
       window.twttr = (function(d, s, id) {

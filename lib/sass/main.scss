@@ -1,3 +1,4 @@
+@import 'micro_clearfix';
 @import 'meyer_reset';
 
 // Variables
@@ -5,43 +6,21 @@ $green-bg: #B2DC44;
 $pink: #F52DA7;
 
 body {
-  background-image: url('../images/dude.png');
   background-color: $green-bg;
-  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 h1 {
   font-family: Courier New;
   color: $pink;
-  text-align: right;
-  font-size: 3em;
-  padding-right: 1em;
 }
 
 p {
   font-family: 'Bangers', cursive;
   color: white;
-  text-align: right;
-  font-size: 4em;
-  padding: 1em;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 4em 4em;
-}
-
-.another-one {
-  float: right;
-  padding: 0 4em;
-}
-
-#tweetIt {
-  padding: 1em 6em 2em 4em;
-  float: right;
-}
-
-.btn {
+.another-one button {
   font-family: Courier New;
   color: $pink;
   font-size: 3em;
@@ -52,8 +31,104 @@ p {
   cursor: pointer;
 }
 
-.btn:hover {
+.another-one button:hover {
   background: rgba(255, 92, 193, 0.5);
   border: 2px solid white;
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .another-one button {
+    padding: .1em;
+  }
+}
+@media screen and (max-width: 720px) {
+  a#logo {
+    padding: 1em;
+  }
+
+  a#logo img {
+    width: 100%;
+    min-width: 55%;
+  }
+  img#chuck {
+    width: 55%;
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    z-index: -1;
+  }
+
+  h1 {
+    float: right;
+    text-align: right;
+    font-size: 3em;
+    padding: 1em 1em 0 0;
+  }
+
+  p {
+    float: right;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 1em 1em 1em;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  .another-one {
+    padding: 1em;
+    margin: 0 auto;
+  }
+
+  #tweetIt {
+    padding: 1em 6em 2em 4em;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 721px) {
+  img#chuck {
+    width: 50%;
+    position: fixed;
+    bottom: 0px;
+    z-index: -1;
+  }
+
+  a#logo img {
+    float: right;
+    width: 55%;
+    padding: 1em 1em 0 1em ;
+  }
+
+  h1 {
+    float: right;
+    text-align: right;
+    font-size: 3em;
+    padding: 1em 1em 0 0;
+  }
+
+  p {
+    float: right;
+    text-align: right;
+    font-size: 4em;
+    padding: 1em 1em 1em 3em;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 4em 0 2em;
+  }
+
+  .another-one {
+    float: right;
+    padding: 0 4em 1em 0;
+  }
+
+  #tweetIt {
+    padding: 1em 6em 2em 4em;
+    float: right;
+  }
 }

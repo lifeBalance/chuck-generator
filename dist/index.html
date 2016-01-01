@@ -14,15 +14,15 @@
     <link href="/stylesheets/main.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <h1>These are the facts:</h1>
+    <div class="container"><a id="logo" href="http://www.icndb.com/"><img src="images/icndb_logo.png"></a>
+      <h1 class="cf">These are the facts:</h1>
       <p id="quote"></p>
       <div class="another-one">
         <button id="generate" type="button" class="btn">Another one!</button>
       </div>
-      <div id="tweetIt">
+      <div id="tweetIt" class="cf">
         <!-- We don't need to create a button here, since it's created by a "Factory Button" in script.js-->
-      </div>
+      </div><img id="chuck" src="images/chuck.png">
       <script>
         window.twttr = (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
